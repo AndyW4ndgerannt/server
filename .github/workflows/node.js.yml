@@ -27,7 +27,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: | 
-        git clone https://github.com/electron/electron-quick-start
-        cd electron-quick-start
-        npm install && npm start
+        npm install -g create-react-app
+        npx create-react-app my-app
+        cd my-app
+        npm start
+        
     
