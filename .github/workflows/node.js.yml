@@ -26,5 +26,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: node htmlFile.js
-    - run: node json.js
+    - run: npm htmlFile.js
+    - run: npm json.js
