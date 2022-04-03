@@ -13,16 +13,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkin@v3
+    - name: install req
+      run: apt install node
+
+    steps:
     - uses: actions/serve0@v3
-    - name: run the server
+    - name: run the server0
       run: node json.js
     
     - uses: actions/serve1@v3
-    - name: run the server
+    - name: run the server1
       run: node csv.js
     
     - uses: actions/serve2@v3
-    - name: run the server
+    - name: run the server2
       run: node html.js
     
     - uses: actions/checkout@v3
