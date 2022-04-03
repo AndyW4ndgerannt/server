@@ -13,6 +13,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/check@v3
+    - name: install update
+      run: apt update && apt upgrade -y
+
+    steps:
     - uses: actions/checkin@v3
     - name: install req
       run: apt install node
