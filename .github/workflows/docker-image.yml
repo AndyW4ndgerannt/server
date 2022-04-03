@@ -17,12 +17,10 @@ jobs:
     - name: install update
       run: apt update && apt upgrade -y
 
-    steps:
     - uses: actions/checkin@v3
     - name: install req
       run: apt install node
 
-    steps:
     - uses: actions/serve0@v3
     - name: run the server0
       run: node json.js
