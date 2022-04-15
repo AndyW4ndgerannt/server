@@ -31,6 +31,6 @@ jobs:
          sudo apt-get update && apt-get upgrade -y
          sudo apt-get install npm
          sudo apt-get install npx
-         sudo npm install node 
-         sudo npm i -g create-react-app
+         npm install node 
+         npm i -g create-react-app
          
